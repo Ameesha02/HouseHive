@@ -64,7 +64,7 @@ export default function BasicMenu() {
 
       {showPopup && <Signup />
           }
-          {showPopup &&   <CloseIcon style={{position:"fixed", padding:"1rem 1.5rem"}}  onClick={openPopup} />
+          {showPopup &&   <CloseIcon className="closeicon"   onClick={openPopup} />
           }
     </div>
   );

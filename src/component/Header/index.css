@@ -104,6 +104,11 @@ padding-right: 0.5rem;}
         border-top: 1px solid var(--grey);
         box-shadow: 0 1px 2px rgb(000/8%), 0 4px 12px rgb(0 0 0 / 5%);
     }
+    .closeicon{right: 0.5rem;
+        top: 3.5rem;}
+        .formContainer.S{
+            margin-top: 2rem;
+        }
 }
 /* bootomnav */
 /* .css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root.Mui-selected {
@@ -113,7 +118,7 @@ padding-right: 0.5rem;}
     color:var(--theme);
 } */
 
-.formContainer{
+.formContainer.L{
     background-color: #a7bcff;
     height: 100vh;
     position: fixed;
@@ -124,9 +129,13 @@ padding-right: 0.5rem;}
           height: 68vh;
           background-color: #fff;
           right:1rem;
+          position: fixed;
         display: flex;
         align-items: center;
-        justify-content: center;}
+        justify-content: center;
+        box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+    border-radius: 1rem;
+}
 
     .formContainer .formWrapper{
         background-color: white;
@@ -170,3 +179,17 @@ padding-right: 0.5rem;}
             color:#5d5b8d;
             font-size: 12px;
 }
+
+.closeicon{position:fixed;
+    padding:1rem 1.5rem}
+    @media only screen and (max-width:542px) {
+        .formContainer.L .formWrapper {
+         
+            padding: 62px 25px;}
+            .formContainer.S{
+                margin-top: 3rem;}
+
+            .formContainer.S .formWrapper {
+               
+                padding: 33px 19px;}
+            }

@@ -2,7 +2,7 @@ import React from 'react'
 import "./index.css"
 const Login = () => {
   return (
-    <div className='formContainer' style={{width:"100%"}}>
+    <div className='formContainer L' style={{width:"100%"}}>
     <div className="formWrapper">
         <span className="logo">HouseHive</span>
         <span className="title">Login</span>
