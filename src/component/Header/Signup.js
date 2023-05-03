@@ -1,6 +1,6 @@
 import React from 'react'
 import "./index.css"
-import CloseIcon from '@mui/icons-material/Close';
+
 const Signup = () => {
     function handleSubmit(event) {
         event.preventDefault()

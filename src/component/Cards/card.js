@@ -22,7 +22,7 @@ function Card({ card }) {
       >
         {card.imgSrc.map((src, i) => (
           <SwiperSlide key={i}>
-            <img src={src} className="card-img" />
+            <img src={src} alt="img"className="card-img" />
           </SwiperSlide>
         ))}
       </Swiper>

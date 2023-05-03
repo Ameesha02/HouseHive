@@ -2,7 +2,7 @@ import React ,{useState}from 'react'
 import "./index.css"
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import {Link} from "react-router-dom"
+
 import Content from './content.js';
 
 const Footer = () => {
