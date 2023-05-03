@@ -112,3 +112,61 @@ padding-right: 0.5rem;}
 .css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root.Mui-selected {
     color:var(--theme);
 } */
+
+.formContainer{
+    background-color: #a7bcff;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+    .formContainer.S{
+          height: 68vh;
+          background-color: #fff;
+          right:1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+
+    .formContainer .formWrapper{
+        background-color: white;
+        padding: 20px 60px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        align-items: center;}
+        .formContainer .formWrapper .logo{
+            color: #5d5b8d;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .formContainer .formWrapper .title{
+            font-size: 12px; color: #5d5b8d;
+            
+        }
+      
+        .formContainer .formWrapper form{
+            display: flex;
+            flex-direction: column;
+            gap:15px;}
+            .formWrapper form input{
+                padding: 15px;
+                border: none;
+                width: 250px;
+                border-bottom:1px solid #c4cef1;
+    
+            }
+            .formWrapper form   button{
+                background-color: #7b96ec;
+                color: #fff;
+                padding: 10px;
+                font-weight: bold;
+        border: none;
+        cursor: pointer;
+            }
+        
+            .formWrapper p{
+            color:#5d5b8d;
+            font-size: 12px;
+}

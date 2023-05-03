@@ -6,7 +6,7 @@
     --grey:#ddd;
     --font-grey:#717171;
     --white:#ffffff;
-    --theme:#ff385c;
+    --theme:#a7bcff;;
     --light-grey:#f7f7f7;
 
     }
@@ -15,4 +15,9 @@
     font-family: "Nunito Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    }
+    @media only screen and (min-width:800px) {
+      .content{
+        display: none;
+      }
     }

@@ -21,9 +21,10 @@ const handleClick=()=>{
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction label="Explore"  onClick={handleClick}   icon={<RestoreIcon variant="contained" color={flag ?"rgba(0, 0, 0, 0.6)":"#fff"}/>} />
-        <BottomNavigationAction label="Wishlist" icon={<FavoriteIcon />} />
-        <BottomNavigationAction label="Login" icon={<LocationOnIcon />} />
+        <BottomNavigationAction label="Explore"  onClick={handleClick}   icon={<RestoreIcon variant="contained"/>} 
+          sx={{ '&.Mui-selected': { color: 'var(--theme)' } }}/>
+        <BottomNavigationAction label="Wishlist" icon={<FavoriteIcon />}   sx={{ '&.Mui-selected': { color: 'var(--theme)' } }}/>
+        <BottomNavigationAction label="Login" icon={<LocationOnIcon />}   sx={{ '&.Mui-selected': { color: 'var(--theme)'} }}/>
       </BottomNavigation>
     </div>
   );

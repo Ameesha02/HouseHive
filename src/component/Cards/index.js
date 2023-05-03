@@ -7,7 +7,7 @@ function Cards({ list }) {
        {list.map((card, i) => (
         <Card card={card} key={i} />
       ))} 
-      {/* <Card/> */}
+      
     </div>
   );
 }

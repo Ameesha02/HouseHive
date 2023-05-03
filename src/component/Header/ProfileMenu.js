@@ -1,10 +1,13 @@
-import * as React from 'react';
+import React,{useState} from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
+import CloseIcon from '@mui/icons-material/Close';
 import "./index.css"
+import { Link } from 'react-router-dom';
+import Signup from './Signup.js';
 
 
 export default function BasicMenu() {
@@ -15,6 +18,11 @@ export default function BasicMenu() {
   };
   const handleClose = () => {
     setAnchorEl(null);
+  };
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openPopup = () => {
+    setShowPopup(!showPopup);
   };
 
   return (
@@ -30,7 +38,7 @@ export default function BasicMenu() {
         <MenuRoundedIcon/>
      <AccountCircleRoundedIcon/>
       </div>
-      <Menu
+     {!showPopup && <Menu
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
@@ -45,13 +53,19 @@ export default function BasicMenu() {
         minWidth:"200px",
         boxShadow:"0 1px 2px rgb(000/8%), 0 4px 12px rgb(0 0 0 / 5%);"}}}
       >
-        <MenuItem className='menu-items' onClick={handleClose}>Sign Up</MenuItem>
-        <MenuItem  className='menu-items' onClick={handleClose}> Login</MenuItem>
+        <MenuItem className='menu-items' onClick={openPopup}>Sign Up</MenuItem>
+     <Link to="/Login" style={{ textDecoration: 'none', color: 'inherit' }}> <MenuItem  className='menu-items'   onClick={handleClose}> Login</MenuItem></Link> 
+    
       <div style={{height:"1px",backgroundColor:"var(--grey)",width:"100%" }}/>
-        <MenuItem className='menu-items' onClick={handleClose}>Airbnb Your Home</MenuItem>
+        <MenuItem className='menu-items' onClick={handleClose}>HouseHive Your Home</MenuItem>
         <MenuItem className='menu-items' onClick={handleClose}>Host an Experince</MenuItem>
         <MenuItem  className='menu-items' onClick={handleClose}>Help</MenuItem>
-      </Menu>
+      </Menu>}
+
+      {showPopup && <Signup />
+          }
+          {showPopup &&   <CloseIcon style={{position:"fixed", padding:"1rem 1.5rem"}}  onClick={openPopup} />
+          }
     </div>
   );
 }

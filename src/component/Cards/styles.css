@@ -4,6 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem 3rem;
+  margin-bottom: 1rem;
 }
 .card-box {
   margin: 1rem;
